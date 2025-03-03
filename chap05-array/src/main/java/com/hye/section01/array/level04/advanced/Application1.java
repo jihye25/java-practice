@@ -19,7 +19,13 @@ public class Application1 {
         for (int i = 0; i < 6; i++) {
             int random = (int) (Math.random() * 45) + 1;
             arr[i] = random;
-        }
+            for (int j = 0; j < i; j++) {
+                if(arr[i] == arr[j]){
+                    i--;
+                    break;
+                }
+            }
+            }
 
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
