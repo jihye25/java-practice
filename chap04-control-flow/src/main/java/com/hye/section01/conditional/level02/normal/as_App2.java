@@ -1,4 +1,4 @@
-package com.hye.section1.conditional.level02.normal;
+package com.hye.section01.conditional.level02.normal;
 
 import java.util.Scanner;
 
