@@ -15,7 +15,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 /* 트럭 - 백준 (13335) */
 class Practice2Test {
 
-    Practice2 practice2;
+    Practice2 practice2 = new Practice2();
 
     @BeforeEach
     void setUp() {

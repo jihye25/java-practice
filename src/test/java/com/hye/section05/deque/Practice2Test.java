@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /* AC - 백준 (5430) */
 class Practice2Test {
 
-    Practice2 practice2;
+    Practice2 practice2 = new Practice2();
 
     @BeforeEach
     void setUp() {

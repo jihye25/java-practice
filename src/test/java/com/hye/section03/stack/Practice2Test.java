@@ -7,6 +7,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.io.IOException;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +33,7 @@ class Practice2Test {
     @DisplayName("쇠막대기 문제 테스트")
     @ParameterizedTest
     @MethodSource("provideTestCases")
-    void testSolution(String input, int expected) {
+    void testSolution(String input, int expected) throws IOException {
         int result = practice2.solution(input);
         Assertions.assertEquals(expected, result);
     }
